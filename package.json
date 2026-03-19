@@ -1,0 +1,30 @@
+{
+  "name": "playwright_project",
+  "version": "1.0.0",
+  "description": "TodoMVC Automated Test Suite based on Excel test cases",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "install:browsers": "playwright install",
+    "test:specific": "playwright test tests/todomvc-complete.spec.js",
+    "test:tc01": "playwright test tests/todomvc-complete.spec.js -g \"TC 01\""
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "todomvc"
+  ],
+  "author": "QA Automation Engineer",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}
